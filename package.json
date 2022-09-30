@@ -1,0 +1,37 @@
+{
+  "name": "the-pythia",
+  "version": "1.0.0",
+  "description": "Deterministic Math.random()",
+  "main": "lib/pythia.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "deterministic",
+    "pnrg",
+    "seed",
+    "random",
+    "random seed",
+    "seed",
+    "test"
+  ],
+  "author": "Markus Daghall",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daghall/pythia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Daghall/pythia/issues"
+  },
+  "homepage": "https://github.com/Daghall/pythia#readme"
+}
