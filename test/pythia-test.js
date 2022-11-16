@@ -92,10 +92,18 @@ describe("pythia", () => {
 
   it("asserts realistic random value", () => {
     pythia.predict(12);
-    expect(Math.random).to.throw(PythiaError, "Random value must be less than or equal to one");
+    expect(Math.random).to.throw(PythiaError, "Random value must be less than one");
 
     pythia.predict(-1);
     expect(Math.random).to.throw(PythiaError, "Random value must be greater than or equal to zero");
+  });
+
+  it("asserts correct data type of random value", () => {
+    pythia.predict(["0.5"]);
+    expect(Math.random).to.throw(PythiaError, "Random value must be a number");
+
+    pythia.predict(() => "0.5");
+    expect(Math.random).to.throw(PythiaError, "Random value must be a number");
   });
 
   it("throws when no arguments are given", () => {

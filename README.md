@@ -7,7 +7,7 @@ Deterministically mock values from `Math.random`.
 
 Values can be given as a single number, an array or a function returning a value. Optionally stop mocking after the values have been used.
 
-Values are verified to be of type `number` and in the range `[0,1]`, as this is what `Math.random` returns.
+Values are verified to be of type `number` and in the interval `[0,1[`, as this is what `Math.random` returns.
 An error is thrown when unexpected values are detected.
 
 ## Installation
@@ -110,4 +110,10 @@ Math.random(); // 0.8219
 Math.random(); // 0.8219
 Math.random(); // 0.8219
 Math.random(); // Psuedo-random value between 0 and 1
+
+
+// Unexpected predictions
+pythia.predict(12); // Throws PythiaError: "Random value must be greater than or equal to zero"
+pythia.predict(-1); // Throws PythiaError: "Random value must be less than one"
+
 ```
