@@ -1,6 +1,6 @@
 {
   "name": "the-pythia",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Deterministic Math.random()",
   "main": "lib/pythia.js",
   "directories": {
