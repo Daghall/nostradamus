@@ -113,7 +113,6 @@ Math.random(); // Psuedo-random value between 0 and 1
 
 
 // Unexpected predictions
-pythia.predict(12); // Throws PythiaError: "Random value must be greater than or equal to zero"
-pythia.predict(-1); // Throws PythiaError: "Random value must be less than one"
-
+pythia.predict(-1); // Throws PythiaError: "Random value must be greater than or equal to zero"
+pythia.predict(12); // Throws PythiaError: "Random value must be less than one"
 ```
