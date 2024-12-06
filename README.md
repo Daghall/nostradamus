@@ -47,8 +47,9 @@ Accepts the following types:
 ---
 ##### `options`
 
-An options object that only has one settings: `repeat`.
-Setting this to `false` will reset `Math.random` when the value(s) have been exhausted. Has no effect on `function` predictions, since it resets as soon as the function returns something falsy.
+An options object that only has one setting: `repeat`.
+
+Setting this to `false` will reset `Math.random` when the value(s) have been exhausted. Has no effect on `function` predictions, since it resets as soon as the function returns something `falsy`.
 
 ### `isPredicting()`
 
